@@ -1,5 +1,5 @@
-Summary:	GTK rdesktop frontend
-Summary(pl):	Nak³adka na rdesktop dla GTK
+Summary:	GNOME rdesktop frontend
+Summary(pl):	Nak³adka na rdesktop dla GNOME
 Name:		grdesktop
 Version:	0.22
 Release:	1
@@ -12,6 +12,7 @@ BuildRequires:	GConf2-devel >= 2.4.0
 BuildRequires:	docbook-utils
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
+BuildRequires:	pkgconfig
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
 Requires:	rdesktop
