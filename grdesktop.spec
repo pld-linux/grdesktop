@@ -1,12 +1,13 @@
 Summary:	GNOME rdesktop frontend
 Summary(pl):	Nak³adka na rdesktop dla GNOME
 Name:		grdesktop
-Version:	0.22
+Version:	0.23
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://savannah.nongnu.org/download/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	6fa64e007e2b26bfe96e2516c0d6ddf4
+# Source0-md5:	46f8f3e2d4aa2433b8b1537fefa8a4b7
+Patch0:		%{name}-gettext.patch
 URL:		http://www.nongnu.org/grdesktop/
 BuildRequires:	GConf2-devel >= 2.4.0
 BuildRequires:	docbook-utils
@@ -27,8 +28,12 @@ Ten pakiet zawiera graficzn± nak³adkê na rdesktop.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure \
 	--with-html-dir=%{_gtkdocdir} \
 	--with-keymap-path="%{_datadir}/rdesktop/keymaps" \
