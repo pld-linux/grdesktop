@@ -2,7 +2,7 @@ Summary:	GNOME rdesktop frontend
 Summary(pl):	Nak³adka na rdesktop dla GNOME
 Name:		grdesktop
 Version:	0.23
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://savannah.nongnu.org/download/%{name}/%{name}-%{version}.tar.gz
@@ -14,6 +14,7 @@ BuildRequires:	GConf2-devel >= 2.4.0
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	docbook-utils
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	pkgconfig
