@@ -16,7 +16,7 @@
  Version=1.0
  Actions=Full;
 -Categories=Application;Network;X-Red-Hat-Base;
-+Categories=GTK;GNOME;Network;
++Categories=GTK;GNOME;Network;RemoteAccess;
  Encoding=UTF-8
  
  [Desktop Action Full]
