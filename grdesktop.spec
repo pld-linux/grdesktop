@@ -10,6 +10,8 @@ Source0:	http://savannah.nongnu.org/download/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-gettext.patch
 URL:		http://www.nongnu.org/grdesktop/
 BuildRequires:	GConf2-devel >= 2.4.0
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	docbook-utils
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
