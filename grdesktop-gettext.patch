@@ -1,0 +1,11 @@
+diff -urN aa/grdesktop-0.23/configure.ac grdesktop-0.23/configure.ac
+--- aa/grdesktop-0.23/configure.ac	2004-03-30 15:59:11.000000000 +0200
++++ grdesktop-0.23/configure.ac	2004-04-04 18:31:06.595005528 +0200
+@@ -43,6 +43,7 @@
+ ALL_LINGUAS="de fr es"
+ AM_GLIB_GNU_GETTEXT
+ GETTEXT_PACKAGE=$PACKAGE
++AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["${GETTEXT_PACKAGE}"], [gettext domain])
+ 
+ dnl Searching for GTK+ 2 includes/libs and export compiler flags
