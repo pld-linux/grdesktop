@@ -1,6 +1,6 @@
---- grdesktop-0.23/grdesktop.desktop.orig	2004-10-20 16:31:05.853679752 +0200
-+++ grdesktop-0.23/grdesktop.desktop	2004-10-20 16:38:01.000000000 +0200
-@@ -1,16 +1,19 @@
+--- grdesktop-0.23/grdesktop.desktop.orig	2003-11-12 15:47:22.000000000 +0100
++++ grdesktop-0.23/grdesktop.desktop	2005-05-14 22:01:05.000000000 +0200
+@@ -1,7 +1,9 @@
  [Desktop Entry]
  Name=Remotedesktop Client
 +Name[pl]=Klient zdalnego pulpitu (RDP)
@@ -9,9 +9,8 @@
 +Comment[pl]=Łączy ze zdalnym Windows Terminal Server
  TryExec=grdesktop
  Exec=grdesktop
--Icon=grdesktop.png
-+Icon=grdesktop/icon.png
- Terminal=false
+ Icon=grdesktop.png
+@@ -9,8 +11,9 @@
  Type=Application
  Version=1.0
  Actions=Full;
