@@ -2,7 +2,7 @@ Summary:	GNOME rdesktop frontend
 Summary(pl):	Nak³adka na rdesktop dla GNOME
 Name:		grdesktop
 Version:	0.23
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://savannah.nongnu.org/download/%{name}/%{name}-%{version}.tar.gz
@@ -52,6 +52,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+ln -sf %{_pixmapsdir}/%{name}/icon.png \
+    $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}/%{name}.png 
+ln -sf %{_pixmapsdir}/%{name}/icon.png \
+    $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png 
+
 %find_lang %{name} --with-gnome
 
 %clean
@@ -68,6 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %{_sysconfdir}/gconf/schemas/*
 %{_pixmapsdir}/%{name}
+%{_pixmapsdir}/%{name}.png
 %{_omf_dest_dir}/%{name}
 %{_mandir}/man1/*
 %{_desktopdir}/*
