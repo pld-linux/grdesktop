@@ -76,6 +76,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/%{name}.png
 %{_omf_dest_dir}/%{name}
 %{_mandir}/man1/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_datadir}/mime-info/*
 %{_datadir}/application-registry/*
