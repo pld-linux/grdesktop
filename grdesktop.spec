@@ -1,5 +1,5 @@
 Summary:	GNOME rdesktop frontend
-Summary(pl):	Nak³adka na rdesktop dla GNOME
+Summary(pl.UTF-8):   NakÅ‚adka na rdesktop dla GNOME
 Name:		grdesktop
 Version:	0.23
 Release:	4
@@ -27,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package provides a graphical frontend for the remote
 desktop client (rdesktop).
 
-%description -l pl
-Ten pakiet zawiera graficzn± nak³adkê na rdesktop.
+%description -l pl.UTF-8
+Ten pakiet zawiera graficznÄ… nakÅ‚adkÄ™ na rdesktop.
 
 %prep
 %setup -q
