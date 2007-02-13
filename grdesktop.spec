@@ -1,5 +1,5 @@
 Summary:	GNOME rdesktop frontend
-Summary(pl.UTF-8):   Nakładka na rdesktop dla GNOME
+Summary(pl.UTF-8):	Nakładka na rdesktop dla GNOME
 Name:		grdesktop
 Version:	0.23
 Release:	4
