@@ -18,6 +18,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	pkgconfig
+BuildRequires:	scrollkeeper
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
 Requires:	rdesktop
